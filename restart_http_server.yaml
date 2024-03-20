@@ -1,6 +1,7 @@
 ---
 - name: Restart service
   hosts: all
+  become: true
   tasks:
     - name: Debug service variable
       debug:
